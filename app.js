@@ -1,9 +1,11 @@
 "use strict";
 // Variables
-const magnifireIcon = document.querySelector(".magnifire");
-const searchInp = document.querySelector("#search");
+const magnifierIcon = document.querySelector(".magnifier");
+const srchBarCont = document.querySelector(".search-bar-container");
+const srchInp = document.querySelector("#search");
 const micIcon = document.querySelector(".mic-icon");
-magnifireIcon.addEventListener("click", function () {
-    searchInp.classList.toggle("active");
+magnifierIcon.addEventListener("click", function () {
+    srchInp.classList.toggle("active");
     micIcon.classList.toggle("active");
+    srchBarCont.classList.toggle("active");
 });

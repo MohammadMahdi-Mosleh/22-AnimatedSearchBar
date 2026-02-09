@@ -16,8 +16,9 @@ body {
     background-color: aliceblue;
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2),
         -6px -6px 10px rgba(255, 255, 255, 0.7);
-    border-radius: 50px;
-    padding: 15px 22px;
+    border-radius: 60px;
+    padding: 22px;
+    transition: width 1.5s;
 }
 
 #search {
@@ -25,10 +26,17 @@ body {
     border: none;
     outline: none;
     color: rgb(100, 100, 100);
+    transition: width 1s;
+    transition-delay: 0.5s;
 }
 
 .magnifier {
     cursor: pointer;
+}
+
+.mic-icon {
+    transition: width 0.4s;
+    transition-delay: 1s;
 }
 
 img {
@@ -36,13 +44,14 @@ img {
 }
 
 .active.search-bar-container {
-    width: 50px;
+    width: 70px;
+
 }
 
-.active #search {
+.active#search {
     width: 0;
 }
 
-.active .mic-icon {
+.active.mic-icon {
     width: 0px;
 }
