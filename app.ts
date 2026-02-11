@@ -1,13 +1,10 @@
 // Variables
-const magnifierIcon = document.querySelector(".magnifier") as HTMLImageElement;
-const srchBarCont = document.querySelector(".search-bar-container") as HTMLDivElement;
-const srchInp = document.querySelector("#search") as HTMLInputElement;
-const micIcon = document.querySelector(".mic-icon") as HTMLImageElement;
+const srchBarContain = document.querySelector('.search-bar-container') as HTMLDivElement;
+const srchInpt = document.querySelector('.search-inpt') as HTMLInputElement;
+const mic = document.querySelector('.fa-microphone') as HTMLElement;
+const magnifier = document.querySelector('.fa-magnifying-glass') as HTMLElement;
 
-magnifierIcon.addEventListener("click", function() {
-    srchInp.classList.toggle("active");
-    micIcon.classList.toggle("active");
-    srchBarCont.classList.toggle("active");
-
+// Functionality 
+magnifier.addEventListener('click', () => {
+    srchBarContain.classList.toggle('active');
 })
-
